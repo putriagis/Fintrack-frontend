@@ -1,16 +1,30 @@
-# React + Vite
+# FinTrack Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+FinTrack adalah website pencatat keuangan pribadi untuk mencatat pemasukan dan pengeluaran sehari-hari. Project ini adalah versi React dari FinTrack dan akan dikembangkan sampai Pekan 14.
 
-Currently, two official plugins are available:
+Entitas utama: **Transaksi** (tanggal, keterangan, jenis, kategori, nominal).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Cara menjalankan
+npm install
+npm run dev
 
-## React Compiler
+Buka http://localhost:5173
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Halaman
+- Dashboard: ringkasan saldo, pengeluaran per kategori, transaksi terakhir
+- Riwayat Transaksi: tabel transaksi dengan filter, tombol detail, dan tombol hapus
+- Detail Transaksi: foto struk, informasi, dan catatan transaksi
+- Tambah Transaksi: form tambah transaksi
 
-## Expanding the Oxlint configuration
+## Component
+- Navbar: navigasi antarhalaman
+- Dashboard: halaman dashboard berisi ringkasan saldo, pengeluaran per kategori, dan transaksi terakhir
+- KartuRingkasan: satu kartu angka ringkasan
+- RiwayatTransaksi: halaman riwayat dengan filter dan tabel
+- BarisTransaksi: satu baris transaksi di tabel
+- DetailTransaksi: halaman detail satu transaksi
+- FormTransaksi: form tambah transaksi (controlled component)
+- Footer: informasi pembuat
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Screenshot
+(tempel screenshot di sini)
